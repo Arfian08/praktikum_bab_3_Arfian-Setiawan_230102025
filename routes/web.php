@@ -6,7 +6,9 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CategoryProductController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ReportController;
 
+Route::get('/laporan', [ReportController::class, 'index'])->name('laporan.index');
 
 
 // 1. BASIC ROUTES

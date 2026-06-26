@@ -1,15 +1,13 @@
 <?php
-
+// database/factories/UserFactory.php
+ 
 namespace Database\Factories;
-
-use App\Models\User;
+ 
+use App\Enums\ProductStatus;
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-
-/**
- * @extends Factory<User>
- */
+use Illuminate\Support\Facades\Hash;
 class UserFactory extends Factory
 {
     /**
@@ -43,3 +41,4 @@ class UserFactory extends Factory
         ]);
     }
 }
+
